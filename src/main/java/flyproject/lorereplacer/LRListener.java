@@ -119,6 +119,7 @@ public class LRListener implements Listener {
                 if (!((boolean) array[0])) continue;
                 stat++;
                 im.setLore((List<String>) array[1]);
+                is.setItemMeta(im);
             }
             for (ItemStack is : inventory.getArmorContents()){
                 if (is==null || is.getType().equals(Material.AIR)) continue;
@@ -129,6 +130,7 @@ public class LRListener implements Listener {
                 if (!((boolean) array[0])) continue;
                 stat++;
                 im.setLore((List<String>) array[1]);
+                is.setItemMeta(im);
             }
             for (ItemStack is : inventory.getExtraContents()){
                 if (is==null || is.getType().equals(Material.AIR)) continue;
@@ -139,6 +141,7 @@ public class LRListener implements Listener {
                 if (!((boolean) array[0])) continue;
                 stat++;
                 im.setLore((List<String>) array[1]);
+                is.setItemMeta(im);
             }
             Bukkit.getLogger().info("[LoreReplacer] " + String.format(LoreReplacer.config.getString("messages.log"), player.getDisplayName(),String.valueOf(stat)));
             if (LoreReplacer.config.getBoolean("sendtoplayer")){
