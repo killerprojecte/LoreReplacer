@@ -1,0 +1,13 @@
+name: LoreReplacer
+version: '${version}'
+main: flyproject.lorereplacer.LoreReplacer
+api-version: 1.13
+authors: [ FlyProject ]
+description: Just Simple Automation Lore Replacer
+commands:
+  lorereplacer:
+    aliases:
+      - lrreplacer
+      - lrr
+      - lrrep
+    permission: admin

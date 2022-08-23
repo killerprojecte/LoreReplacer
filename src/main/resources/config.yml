@@ -1,0 +1,14 @@
+lores:
+  example:
+    old: "&cHello"
+    new: "&aWorld"
+  example2:
+    old: "&aWorld"
+    new: "&cHello"
+
+messages:
+  replaced: "&a为您替换了 &e%s个&a物品描述"
+  log: "为玩家: %s 替换了 %s个物品描述"
+  command: "&aLoreReplacer成功重载配置文件"
+
+sendtoplayer: false
